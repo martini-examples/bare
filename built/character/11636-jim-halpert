@@ -1,0 +1,20 @@
+<html>
+    <head>
+    <title>Jim Halpert: Jaguar</title>
+    <meta name="generator" content="Martini 0.1.0" />
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- My stylesheets -->
+    <link rel="stylesheet" href="./static/css/styles.css">
+  </head>
+    
+  <body>
+    <p>Jim Halpert was the everyman of Dunder Mifflin. He worked just hard enough not to get fired but not so hard that he stood out.  When not making sales calls he passed the time by pulling pranks on his deskmate Dwight. Jim defined the “slacker, and proud of it” attitude. At first, he had no passion for his job, even being reluctant to call it a career.</p>
+<p>As the series progressed he showed more ambition by applying for a promotion in the episode “The Meeting” and even more so in the last season by starting a business with a friend. His willingness to work hard was driven by his want to provide for his family. After longing for the receptionist for years he finally started a relationship, and eventually a family, with Pam.</p>
+<p>Jim’s defining moment came when, on a whim, he married Pam on the Maid of the Mist at Niagara Falls. Holding Pam, Jim smiles at her and then at the camera, finally realizing that he has everything he’s ever wanted.</p>
+
+  </body>
+</html>
+  

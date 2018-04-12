@@ -15,14 +15,17 @@ const siteMeta = const SiteMetaData(
     copyright: '&copy; All rights reserved.');
 
 main(List<String> arguments) async {
-  final postCollector = new DirPostCollector(new Directory('./content'));
-  final processor =
-      new Processor(siteMeta, new SiteLayout())
-        ..add(postCollector)
-        ..start();
+  final builder = new Builder(siteMeta, new SiteLayout(),
+      [new DirPostCollector(new Directory('../content/sections'))]);
 
-  final server = new Jaguar(port: 8000);
-  server.addApi(new GeneratedHandler(processor));
-  server.staticFiles('/static/*', new Directory('./static'));
-  await server.serve();
+//  final server = new Jaguar(port: 8000);
+//  server.addApi(new GeneratedHandler(processor));
+//  server.staticFiles('/static/*', new Directory('../content/static'));
+//  server.log.onRecord.listen(print);
+//  await server.serve(logRequests: true);
+
+  await new FsWriter(builder, new Directory('../built'),
+          statics: new Directory('../content/static'))
+      .write();
+  exit(0);
 }

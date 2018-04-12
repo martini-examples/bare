@@ -7,6 +7,12 @@ import '../partials/partials.dart';
 
 class SiteLayout implements SiteRenderer {
   @override
+  final shortcodes = <ShortCode>[];
+
+  @override
+  final sections = <String, SectionRenderer>{};
+
+  @override
   List<String> index(Site site) => [
         '''
 <html>
@@ -96,8 +102,7 @@ class SectionIndexGenerator extends Component {
       <div class="row">
         <div class="col-sm-9">
           <div class="articles">
-            ${forEach(page.pages,
-            (i) => new PostsListItemPartial(page.pages[i]).render())}
+            ${forEach(page.pages, (i) => new PostsListItemPartial(i).render())}
           </div>
 
           <!-- TODO {{ partial "pagination.html" . }} -->
